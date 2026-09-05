@@ -1,0 +1,13 @@
+{
+  "name": "cloche",
+  "version": "1.0.0",
+  "description": "Publish the app your agent just built and share it with a link. Cloche hosts small apps made with AI agents.",
+  "author": { "name": "Cloche", "email": "hi@cloche.dev" },
+  "homepage": "https://cloche.dev",
+  "repository": "https://github.com/cloche-it/cursor-plugin",
+  "license": "MIT",
+  "keywords": ["deploy", "hosting", "share", "apps", "mcp"],
+  "logo": "assets/logo.svg",
+  "mcpServers": "mcp.json",
+  "skills": "skills"
+}
