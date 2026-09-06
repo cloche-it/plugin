@@ -1,6 +1,10 @@
 {
   "name": "cloche",
-  "owner": { "name": "Cloche", "email": "hi@cloche.dev" },
+  "description": "Cloche: publish the app your agent just built and share it with a link.",
+  "owner": {
+    "name": "Cloche",
+    "email": "hi@cloche.dev"
+  },
   "plugins": [
     {
       "name": "cloche",
