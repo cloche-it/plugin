@@ -1,0 +1,11 @@
+{
+  "name": "cloche",
+  "owner": { "name": "Cloche", "email": "hi@cloche.dev" },
+  "plugins": [
+    {
+      "name": "cloche",
+      "source": "./",
+      "description": "Publish the app your agent just built and share it with a link. Cloche hosts small apps made with AI agents."
+    }
+  ]
+}
