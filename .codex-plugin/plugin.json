@@ -26,6 +26,7 @@
     ],
     "brandColor": "#171612",
     "composerIcon": "./assets/icon.png",
-    "logo": "./assets/logo.png"
+    "logo": "./assets/logo.png",
+    "supportURL": "https://cloche.dev"
   }
 }
