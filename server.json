@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.cloche/cloche",
+  "title": "Cloche",
+  "description": "Publish a client-side app with Cloche and share it with a link.",
+  "version": "1.0.0",
+  "websiteUrl": "https://cloche.dev",
+  "repository": {
+    "url": "https://github.com/cloche-it/plugin",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.cloche.dev/mcp"
+    }
+  ]
+}
