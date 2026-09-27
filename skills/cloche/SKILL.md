@@ -1,18 +1,15 @@
 ---
 name: cloche
-description: Put an app online with Cloche and share it with a link. Use when someone asks to publish, deploy, host, share, or give people a link to an app they are building with you.
+description: Publishes client-side apps to Cloche and returns a share link. Use when someone asks to publish, deploy, host, share, or get a link to an app they are building.
 ---
 
 # Cloche
 
-Cloche hosts small apps made with AI agents. One publish call puts a
-self-contained page online and returns a link to share.
+Cloche publishes client-side apps. Use its tools to publish the app and create a share link when asked.
 
-Before the first publish in a session, fetch
-https://cloche.dev/agent-setup/prompt.md and follow it. It is the current
-contract: what an app may contain, how storage works through
-`window.cloche.*`, and how to hand the person their link. Do not work from
-memory of an older version.
+Before publishing, use the MCP server's deploy instructions. If they are not
+in context, call `get_deploy_instructions`.
 
 If the Cloche tools are missing from this conversation, say so and ask the
-person to install the plugin and sign in, then start a new chat.
+person to connect `https://mcp.cloche.dev/mcp` and sign in. If the tools still
+do not appear, ask them to start a new chat.

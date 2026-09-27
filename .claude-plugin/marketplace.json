@@ -1,6 +1,6 @@
 {
   "name": "cloche",
-  "description": "Cloche: publish the app your agent just built and share it with a link.",
+  "description": "Publish a client-side app with Cloche and share it with a link.",
   "owner": {
     "name": "Cloche",
     "email": "hi@cloche.dev"
@@ -9,7 +9,7 @@
     {
       "name": "cloche",
       "source": "./",
-      "description": "Publish the app your agent just built and share it with a link. Cloche hosts small apps made with AI agents."
+      "description": "Publish a client-side app with Cloche and share it with a link."
     }
   ]
 }

@@ -1,18 +1,16 @@
 {
   "name": "cloche",
   "version": "1.0.0",
-  "description": "Publish the app your agent just built and share it with a link. Cloche hosts small apps made with AI agents.",
+  "description": "Publish a client-side app with Cloche and share it with a link.",
   "author": { "name": "Cloche", "email": "hi@cloche.dev", "url": "https://cloche.dev" },
   "homepage": "https://cloche.dev",
   "repository": "https://github.com/cloche-it/plugin",
   "license": "MIT",
   "keywords": ["deploy", "hosting", "share", "apps", "mcp"],
-  "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Cloche",
-    "shortDescription": "Your AI App. Served.",
-    "longDescription": "Cloche is a home for the apps people make with AI agents. Build an app in the chat, publish it with one call, and share it with a link. The people you send it to open the app and nothing else. Sign in happens in the browser; no keys to paste.",
+    "shortDescription": "Publish and share small apps",
+    "longDescription": "Publish a client-side app from your chat and share it with a link. Cloche hosts the app and provides storage and sign-in.",
     "developerName": "Cloche",
     "category": "Productivity",
     "capabilities": ["Write"],
@@ -21,11 +19,11 @@
     "termsOfServiceURL": "https://cloche.dev/terms/",
     "defaultPrompt": [
       "Put the app we just built online with Cloche and give me the link.",
-      "List my Cloche apps and tell me which ones are shared.",
-      "Open my last Cloche app and add a due-date column."
+      "List my Cloche apps and tell me which ones are shared."
     ],
     "brandColor": "#171612",
     "composerIcon": "./assets/icon.png",
-    "logo": "./assets/logo.png"
+    "logo": "./assets/logo.png",
+    "supportURL": "https://github.com/cloche-it/plugin#support"
   }
 }
