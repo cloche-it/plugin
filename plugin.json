@@ -11,5 +11,93 @@
   "homepage": "https://cloche.dev",
   "repository": "https://github.com/cloche-it/plugin",
   "license": "MIT",
-  "keywords": ["deploy", "hosting", "share", "apps", "mcp"]
+  "keywords": [
+    "deploy",
+    "hosting",
+    "share",
+    "apps",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Cloche",
+        "shortDescription": "Publish and share small apps",
+        "longDescription": "Cloche puts the apps you build in chat online, with a real link.\n\nAsk for an app in the chat. When it works, ask Cloche to publish it. You get an address under cloche.cloud that anyone you choose can open. They do not need the chat that built it.\n\nYou decide who gets in. Keep an app private, invite people by name or email, share a link, or make it public.\n\nKeep improving it. Ask for a change in any chat and publish again to the same link. Every version is kept, and an earlier one can go back.\n\nWhat Cloche can do from the chat:\n- Publish a new app, or a new version of one you already have\n- Tell you whether an app is live\n- Share an app, list who can open it, and take access back\n- List your apps and delete one you no longer need\n- Save unfinished work and pick it up in another chat\n\nAn app is one client-side page: HTML, CSS and JavaScript. Cloche does not run server code.\n\nYou sign in to Cloche in your browser the first time you connect.",
+        "developerName": "Cloche",
+        "category": "Productivity",
+        "capabilities": [
+          "Write"
+        ],
+        "websiteURL": "https://cloche.dev",
+        "privacyPolicyURL": "https://cloche.dev/privacy/",
+        "termsOfServiceURL": "https://cloche.dev/terms/",
+        "defaultPrompt": [
+          "Put the app we just built online with Cloche and give me the link.",
+          "List my Cloche apps and tell me which ones are shared.",
+          "Build me a small RSVP tracker and publish it with Cloche."
+        ],
+        "brandColor": "#171612",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "supportURL": "https://github.com/cloche-it/plugin#support"
+      },
+      "onboardingSkill": "./skills/cloche/SKILL.md",
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Publish a new app",
+              "prompt": "Build a one-page tip calculator and publish it with Cloche.",
+              "tools_triggered": "get_deploy_instructions, publish",
+              "expected_behavior": "Returns a cloche.cloud link and says the app is private until it is shared."
+            },
+            {
+              "description": "List apps",
+              "prompt": "What apps do I have on Cloche?",
+              "tools_triggered": "list_apps",
+              "expected_behavior": "Lists the account's apps with their links and status. Nothing is changed."
+            },
+            {
+              "description": "Check status",
+              "prompt": "Is my tip calculator live?",
+              "tools_triggered": "list_apps, get_app_status",
+              "expected_behavior": "Says whether the app is ready, not published yet, or failed, with the reason."
+            },
+            {
+              "description": "Share by link",
+              "prompt": "Make a link to my tip calculator that stops working in 7 days.",
+              "tools_triggered": "set_access",
+              "expected_behavior": "Returns a share link and says it expires in 7 days."
+            },
+            {
+              "description": "Change an existing app",
+              "prompt": "Add a dark mode toggle to my tip calculator and republish it.",
+              "tools_triggered": "get_app_context, publish",
+              "expected_behavior": "Publishes a new version to the same link as before, with the change live."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unrelated request",
+              "prompt": "What is the capital of Portugal?"
+            },
+            {
+              "description": "Server code, which Cloche does not host",
+              "prompt": "Deploy my Express API with a Postgres database."
+            },
+            {
+              "description": "Another host named by the person",
+              "prompt": "Deploy this site to Vercel."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "Cloche does not sell products or take payments in ChatGPT."
+      },
+      "publication": {
+        "release_notes": "First release: publish, share and update client-side apps from the chat."
+      }
+    }
+  }
 }
