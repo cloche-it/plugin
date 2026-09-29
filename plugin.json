@@ -11,13 +11,7 @@
   "homepage": "https://cloche.dev",
   "repository": "https://github.com/cloche-it/plugin",
   "license": "MIT",
-  "keywords": [
-    "deploy",
-    "hosting",
-    "share",
-    "apps",
-    "mcp"
-  ],
+  "keywords": ["deploy", "hosting", "share", "apps", "mcp"],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -67,20 +61,21 @@
             {
               "description": "Share by link",
               "prompt": "Make a link to my tip calculator that stops working in 7 days.",
-              "tools_triggered": "set_access",
+              "tools_triggered": "list_apps, set_access",
               "expected_behavior": "Returns a share link and says it expires in 7 days."
             },
             {
               "description": "Change an existing app",
               "prompt": "Add a dark mode toggle to my tip calculator and republish it.",
-              "tools_triggered": "get_app_context, publish",
+              "tools_triggered": "list_apps, get_app_context, publish",
               "expected_behavior": "Publishes a new version to the same link as before, with the change live."
             }
           ],
           "negative": [
             {
               "description": "Unrelated request",
-              "prompt": "What is the capital of Portugal?"
+              "prompt": "What is the capital of Portugal?",
+              "expected_behavior": "Answers without calling any Cloche tool."
             },
             {
               "description": "Server code, which Cloche does not host",
@@ -88,7 +83,8 @@
             },
             {
               "description": "Another host named by the person",
-              "prompt": "Deploy this site to Vercel."
+              "prompt": "Deploy this site to Vercel.",
+              "expected_behavior": "Does not call any Cloche tool. Helps with Vercel or says it cannot deploy there."
             }
           ]
         },
