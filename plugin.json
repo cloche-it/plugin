@@ -17,7 +17,7 @@
       "interface": {
         "displayName": "Cloche",
         "shortDescription": "Publish and share small apps",
-        "longDescription": "Cloche puts the apps you build in chat online, with a real link.\n\nAsk for an app in the chat. When it works, ask Cloche to publish it. You get an address under cloche.cloud that anyone you choose can open. They do not need the chat that built it.\n\nYou decide who gets in. Keep an app private, invite people by name or email, share a link, or make it public.\n\nKeep improving it. Ask for a change in any chat and publish again to the same link. Every version is kept, and an earlier one can go back.\n\nWhat Cloche can do from the chat:\n- Publish a new app, or a new version of one you already have\n- Tell you whether an app is live\n- Share an app, list who can open it, and take access back\n- List your apps and delete one you no longer need\n- Save unfinished work and pick it up in another chat\n\nAn app is one client-side page: HTML, CSS and JavaScript. Cloche does not run server code.\n\nYou sign in to Cloche in your browser the first time you connect.",
+        "longDescription": "Cloche puts the apps you build in chat online, each with its own link.\n\nAsk for an app in the chat. When it works, ask Cloche to publish it. You get a link to share. The people you share it with do not need the chat that built it.\n\nYou decide who gets in. Keep an app private, invite people by email, share a link, or make it public.\n\nKeep improving it. Ask for a change in any chat and it goes live at the same link. Cloche keeps every version, so you can put an earlier one back.\n\nWhat Cloche can do from the chat:\n- Publish a new app, or update one you already have\n- Tell you whether an app is live\n- Share an app, list who can open it, and take access back\n- List your apps and delete one you no longer need\n- Save unfinished work and pick it up in another chat\n\nAn app is one client-side page: HTML, CSS and JavaScript. Cloche does not run server code.\n\nYou sign in to Cloche in your browser the first time you connect.",
         "developerName": "Cloche",
         "category": "Productivity",
         "capabilities": [
@@ -28,7 +28,7 @@
         "termsOfServiceURL": "https://cloche.dev/terms/",
         "defaultPrompt": [
           "Put the app we just built online with Cloche and give me the link.",
-          "List my Cloche apps and tell me which ones are shared.",
+          "Which of my Cloche apps are live?",
           "Build me a small RSVP tracker and publish it with Cloche."
         ],
         "brandColor": "#171612",
@@ -78,8 +78,9 @@
               "expected_behavior": "Answers without calling any Cloche tool."
             },
             {
-              "description": "Server code, which Cloche does not host",
-              "prompt": "Deploy my Express API with a Postgres database."
+              "description": "Reading what people saved in an app, which Cloche does not return",
+              "prompt": "Show me every RSVP people have saved in my RSVP tracker.",
+              "expected_behavior": "Does not show any saved entries. Says Cloche cannot read what people saved from the chat, and suggests opening the app to see them."
             },
             {
               "description": "Another host named by the person",
@@ -92,7 +93,7 @@
         "commerce_description": "Cloche does not sell products or take payments in ChatGPT."
       },
       "publication": {
-        "release_notes": "First release: publish, share and update client-side apps from the chat."
+        "release_notes": "First release: publish, share and update your apps from the chat."
       }
     }
   }
