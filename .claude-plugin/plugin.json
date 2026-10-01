@@ -5,7 +5,12 @@
   "description": "Publish a client-side app with Cloche and share it with a link.",
   "author": { "name": "Cloche", "email": "hi@cloche.dev", "url": "https://cloche.dev" },
   "homepage": "https://cloche.dev",
+  "documentationUrl": "https://cloche.dev/docs/",
+  "supportUrl": "https://github.com/cloche-it/plugin#support",
+  "privacyPolicyUrl": "https://cloche.dev/privacy/",
+  "termsOfServiceUrl": "https://cloche.dev/terms/",
   "repository": "https://github.com/cloche-it/plugin",
   "license": "MIT",
+  "icon": "./assets/logo-plate.png",
   "keywords": ["deploy", "hosting", "share", "apps", "mcp"]
 }
