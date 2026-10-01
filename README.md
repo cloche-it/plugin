@@ -18,6 +18,10 @@ You can also add `https://mcp.cloche.dev/mcp` as an MCP server. This connects th
 
 Cloche hosts HTML, CSS and JavaScript without server code or a build step. The app gets storage and the signed-in viewer through `window.cloche.*`.
 
+## Data and privacy
+
+The plugin is a skill and an MCP server setting. It runs no scripts or hooks. Your agent talks to one server, `https://mcp.cloche.dev/mcp`, and only through Cloche's tools: the apps you ask it to publish, change, share or delete. See the [privacy policy](https://cloche.dev/privacy/).
+
 ## Support
 
 hi@cloche.dev
