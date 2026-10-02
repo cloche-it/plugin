@@ -20,7 +20,14 @@ Cloche hosts HTML, CSS and JavaScript without server code or a build step. The a
 
 ## Data and privacy
 
-The plugin is a skill and an MCP server setting. It runs no scripts or hooks. Your agent talks to one server, `https://mcp.cloche.dev/mcp`, and only through Cloche's tools: the apps you ask it to publish, change, share or delete. See the [privacy policy](https://cloche.dev/privacy/).
+The plugin is a skill and an MCP server setting. It runs no scripts or hooks. Your agent talks to Cloche's MCP server, `https://mcp.cloche.dev/mcp`. Images and other binary files may go to a Cloche upload address that server returns. The agent sends:
+
+- The app: its files, name, address, icon and data schema, and a line on what it is for or what changed.
+- With every publish, and when it saves unfinished work, a note of up to 16 KB so another chat can pick it up. It covers the goal, where the work stands, decisions, what is left, checks run and known issues. The tools tell the agent to leave out the chat transcript, credentials and the data people saved in the app.
+- When you share an app, the email address or name of each person you invite.
+- When an app shows data from another connected service, the read-only calls that fetch it: the service's address and label, the tool names and their arguments, and a line on what you chose to share. Cloche makes those calls with each viewer's own access when the app is read. If the owner keeps a copy for people without access, Cloche makes them with the owner's access and stores the result.
+
+See the [privacy policy](https://cloche.dev/privacy/).
 
 ## Support
 
