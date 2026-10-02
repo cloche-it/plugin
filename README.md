@@ -14,10 +14,6 @@ In other clients that support Agent Plugins, install this repository as a plugin
 
 You can also add `https://mcp.cloche.dev/mcp` as an MCP server. This connects the tools without installing the bundled skill.
 
-## Apps
-
-Cloche hosts HTML, CSS and JavaScript without server code or a build step. The app gets storage and the signed-in viewer through `window.cloche.*`.
-
 ## Data and privacy
 
 The plugin is a skill and an MCP server setting. It runs no scripts or hooks. Your agent talks to Cloche's MCP server, `https://mcp.cloche.dev/mcp`. Images and other binary files may go to a Cloche upload address that server returns. The agent sends:
