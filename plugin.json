@@ -38,6 +38,7 @@
       },
       "onboardingSkill": "./skills/cloche/SKILL.md",
       "review": {
+        "demo_recording_url": "https://cloche-chatgpt-demo-piniv.cloche.cloud/s/xxMqo_-WfyhhvYEYPjeNI9lfHTRD5OGe",
         "test_cases": {
           "positive": [
             {
