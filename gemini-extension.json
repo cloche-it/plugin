@@ -1,0 +1,10 @@
+{
+  "name": "cloche",
+  "version": "1.0.0",
+  "description": "Publish a client-side app with Cloche and share it with a link.",
+  "mcpServers": {
+    "cloche": {
+      "httpUrl": "https://mcp.cloche.dev/mcp"
+    }
+  }
+}

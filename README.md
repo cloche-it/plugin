@@ -10,6 +10,8 @@ In Claude Code, add this repository as a marketplace with `/plugin marketplace a
 
 In Codex, add the repository with `codex plugin marketplace add cloche-it/plugin`, then install Cloche from `/plugins`.
 
+In Gemini CLI, install with `gemini extensions install https://github.com/cloche-it/plugin`, then run `/mcp auth cloche` to sign in.
+
 In other clients that support Agent Plugins, install this repository as a plugin. Complete the browser sign-in. If the tools do not appear, start a new chat.
 
 You can also add `https://mcp.cloche.dev/mcp` as an MCP server. This connects the tools without installing the bundled skill.
