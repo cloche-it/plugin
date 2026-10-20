@@ -1,19 +1,31 @@
 {
   "name": "cloche",
-  "version": "1.0.0",
-  "description": "Publish a client-side app with Cloche and share it with a link.",
-  "author": { "name": "Cloche", "email": "hi@cloche.dev", "url": "https://cloche.dev" },
+  "version": "1.0.3",
+  "description": "Cloche puts web apps you build in ChatGPT online, each at its own link, and lets you control who can open them. Use it to publish an app, share it, and send updates live to the same link.",
+  "author": {
+    "name": "Cloche",
+    "email": "hi@cloche.dev",
+    "url": "https://cloche.dev"
+  },
   "homepage": "https://cloche.dev",
   "repository": "https://github.com/cloche-it/plugin",
   "license": "MIT",
-  "keywords": ["deploy", "hosting", "share", "apps", "mcp"],
+  "keywords": [
+    "deploy",
+    "hosting",
+    "share",
+    "apps",
+    "mcp"
+  ],
   "interface": {
     "displayName": "Cloche",
-    "shortDescription": "Publish and share small apps",
-    "longDescription": "Publish a client-side app from your chat and share it with a link. Cloche hosts the app and provides storage and sign-in.",
+    "shortDescription": "Publish and share your apps",
+    "longDescription": "Cloche puts the apps you build in chat online. Ask for an app, and when it works, ask Cloche to publish it. You get a link that works outside the chat.\n\nYou decide who gets in: keep an app private, invite people by email, share a link that can expire, or make it public. You can also see who has access and take it back.\n\nAsk for a change in any chat and it goes live at the same link. Cloche keeps every version, so you can put an earlier one back.\n\nFrom the chat, Cloche can:\n- Publish a new app or update one you already have\n- Tell you whether an app is live, or why it failed\n- Share an app, list who can open it, and take access back\n- List your apps and delete one you no longer need\n- Save unfinished work so another chat can pick it up\n\nYou sign in to Cloche in your browser the first time you connect.",
     "developerName": "Cloche",
     "category": "Productivity",
-    "capabilities": ["Write"],
+    "capabilities": [
+      "Write"
+    ],
     "websiteURL": "https://cloche.dev",
     "privacyPolicyURL": "https://cloche.dev/privacy/",
     "termsOfServiceURL": "https://cloche.dev/terms/",
