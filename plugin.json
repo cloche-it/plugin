@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cloche",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cloche puts web apps you build in ChatGPT online, each at its own link, and lets you control who can open them. Use it to publish an app, share it, and send updates live to the same link.",
   "author": {
     "name": "Cloche",
@@ -85,9 +85,9 @@
               "expected_behavior": "Answers without calling any Cloche tool."
             },
             {
-              "description": "Reading what people saved in an app, which Cloche does not return",
-              "prompt": "Show me every RSVP people have saved in my RSVP tracker.",
-              "expected_behavior": "Does not show any saved entries. Says Cloche cannot read what people saved from the chat, and suggests opening the app to see them."
+              "description": "Taking payments, which Cloche does not do",
+              "prompt": "Charge my RSVP guests $10 each through my RSVP tracker.",
+              "expected_behavior": "Does not charge anyone or change the app. Says Cloche cannot take payments."
             },
             {
               "description": "Another host named by the person",

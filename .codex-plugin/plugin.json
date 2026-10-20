@@ -1,6 +1,6 @@
 {
   "name": "cloche",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cloche puts web apps you build in ChatGPT online, each at its own link, and lets you control who can open them. Use it to publish an app, share it, and send updates live to the same link.",
   "author": {
     "name": "Cloche",
