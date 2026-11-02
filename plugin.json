@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cloche",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cloche puts web apps you build in ChatGPT online, each at its own link, and lets you control who can open them. Use it to publish an app, share it, and send updates live to the same link.",
   "author": {
     "name": "Cloche",
@@ -68,7 +68,7 @@
             {
               "description": "Share by link",
               "prompt": "Make a link to my tip calculator that stops working in 7 days.",
-              "tools_triggered": "list_apps, set_access",
+              "tools_triggered": "list_apps, share_app_by_link",
               "expected_behavior": "Returns a share link and says it expires in 7 days."
             },
             {
@@ -100,7 +100,7 @@
         "commerce_description": "Cloche does not sell products or take payments in ChatGPT."
       },
       "publication": {
-        "release_notes": "First release: publish, share and update your apps from the chat."
+        "release_notes": "Each action is now its own tool with its own description and permissions: sharing by link, making an app public, inviting a person, removing access, renaming, reserving an address, and adding or editing a record. Publishing no longer shares, renames or reserves. Tool inputs no longer include a development token, and the server instructions are shorter."
       }
     }
   }
