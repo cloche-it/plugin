@@ -21,7 +21,8 @@ The plugin is a skill and an MCP server setting. It runs no scripts or hooks. Yo
 - The app: its files, name, address, icon and data schema, and a line on what it is for or what changed.
 - A short note on the work, so another chat can pick it up. The tools tell the agent to leave out the chat transcript, credentials and the data people saved in the app.
 - When you share an app, the email address or name of each person you invite.
-- When an app shows data from another connected service, the read-only calls that fetch it: the service's address and label, the tool names and their arguments, and a line on what you chose to share. Each time the app loads that data, Cloche makes those calls with the viewer's own access. If the owner keeps a copy instead, Cloche makes the calls with the owner's access, stores the result and shows that copy to everyone who can open the app.
+- When an app needs data from another service, the service's name or address and a line on the data it needs. For a company database, the agent may also suggest one table, its columns, filters and changes, never a statement. Cloche sends you a link, and you pick the exact data on a Cloche page. Nothing is read before you choose. Each time the app loads that data, Cloche makes the calls you picked with the viewer's own access. If the owner keeps a copy instead, Cloche makes the calls with the owner's access, stores the result and shows that copy to everyone who can open the app.
+- When you add or change an app's records, the fields you send.
 
 See the [privacy policy](https://cloche.dev/privacy/).
 
