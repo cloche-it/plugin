@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cloche",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Cloche puts web apps you build in ChatGPT online, each at its own link, and lets you control who can open them. Use it to publish an app, share it, and send updates live to the same link.",
   "author": {
     "name": "Cloche",
@@ -25,7 +25,7 @@
         "shortDescription": "Publish and share your apps",
         "longDescription": "Cloche puts the apps you build in chat online. Ask for an app, and when it works, ask Cloche to publish it. You get a link that works outside the chat.\n\nYou decide who gets in: keep an app private, invite people by email, share a link that can expire, or make it public. You can also see who has access and take it back.\n\nAsk for a change in any chat and it goes live at the same link. Cloche keeps every version, so you can put an earlier one back.\n\nFrom the chat, Cloche can:\n- Publish a new app or update one you already have\n- Tell you whether an app is live, or why it failed\n- Share an app, list who can open it, and take access back\n- List your apps, rename one, and delete one you no longer need\n- Read and change the records an app keeps\n- Ask you to pick data from another service for an app, on a Cloche page where nothing is read until you choose\n\nYou sign in to Cloche in your browser the first time you connect.",
         "developerName": "Cloche",
-        "category": "Productivity",
+        "category": "Developer Tools",
         "capabilities": [
           "Write"
         ],
@@ -100,7 +100,7 @@
         "commerce_description": "Cloche does not sell products or take payments in ChatGPT."
       },
       "publication": {
-        "release_notes": "Each thing Cloche does in a chat is now its own tool, with its own description and settings. Sharing is five tools: share by link, set visibility, invite, stop a link and take back an invitation. Records are added and edited by separate tools. For data from another service, Cloche sends you a link and you pick the data on a Cloche page. Saving unfinished work is no longer its own step: each version you publish keeps it."
+        "release_notes": "Each thing Cloche does in a chat is now its own tool, with its own description and settings. Sharing is five tools: share by link, set visibility, invite, stop a link and take back an invitation. Records are added and edited by separate tools. For data from another service, Cloche sends you a link and you pick the data on a Cloche page. Saving unfinished work is no longer its own step: each version you publish keeps it. Version 1.0.5 changes only the listing category, from Productivity to Developer Tools."
       }
     }
   }
